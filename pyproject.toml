@@ -1,0 +1,22 @@
+[project]
+name = "screenreaderhyt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fasttext-wheel>=0.9.2",
+    "numpy>=2.4.4",
+    "onnxruntime>=1.26.0",
+    "opencv-python>=4.13.0.92",
+    "pillow>=12.2.0",
+    "pyclipper>=1.4.0",
+    "pyttsx3==2.91",
+    "shapely>=2.1.2",
+    "tornado>=6.5.5",
+]
+[project.scripts]
+scsrt = "src.core.main:main"
+
+[tool.uv]
+package = true
