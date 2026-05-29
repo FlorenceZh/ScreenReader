@@ -1,5 +1,5 @@
 from .ocr_fither import OCR 
-from .speaker import Speaker
+from ..speaker.speaker import Speaker
 from PIL import ImageGrab
 from .string_fither import is_similar_str
 

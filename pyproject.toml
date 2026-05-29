@@ -1,7 +1,7 @@
 [project]
-name = "ScreenReader"
-version = "0.1.1"
-description = "Add your description here"
+name = "ScreenSubtitleReader"
+version = "0.1.2"
+description = "自动识别屏幕上正在放映视频的字幕并读出来"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
@@ -9,13 +9,15 @@ dependencies = [
     "onnxruntime>=1.26.0",
     "opencv-python>=4.13.0.92",
     "pillow>=12.2.0",
+    "platformdirs>=4.10.0",
     "pyclipper>=1.4.0",
+    "python-levenshtein>=0.27.3",
     "pyttsx3==2.91",
     "shapely>=2.1.2",
     "tornado>=6.5.5",
 ]
 [project.scripts]
-scsrt = "core.main:main"
+scsrt = "ScreenSubtitleReader.__main__:main"
 
 [tool.uv]
 package = true

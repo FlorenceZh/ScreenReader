@@ -1,6 +1,6 @@
 from typing import List
 
-from ScreenReader.ocr_module import OcrHandle
+from ..ocr_module import OcrHandle
 from PIL import Image
 import time
 
@@ -31,7 +31,7 @@ class OCR:
         
         cost_time = time.time() - start_time
         print(f"✅ 识别完成！耗时: {cost_time:.3f} 秒")
-        print("=" * 50)
+        print("=" * 30)
         
         return OCR.fither_master(img,results)
     

@@ -5,12 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Python 调试程序:UI模块",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "ScreenSubtitleReader.ui.ui"
+        },
+        {
             "name": "Python 调试程序: Speaker模块",
             "type": "debugpy",
             "request": "launch",
             "module": "core.speaker",
         },
-                {
+        {
             "name": "Python 调试程序: main模块",
             "type": "debugpy",
             "request": "launch",
